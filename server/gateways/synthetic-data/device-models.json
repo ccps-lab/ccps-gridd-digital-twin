@@ -1,0 +1,54 @@
+[
+    {
+        "deviceModelId": "84a97ecc-e088-4087-a4db-b1cb60062415-00409821",
+        "deviceModelName": "Human Comfort Sensor",
+        "deviceModelDesc": "Monitors indoor air quality by measuring levels of Pressure, temperature, and humidity.",
+        "deviceProperties": [
+                        {
+                "propertyId": "Temperature",
+                "propertyName": "Temperature",
+                "propertyDesc": "External temperature in Celsius",
+                "propertyType": "float",
+                "propertyUnit": "Celsius",
+                "rangeMin": "18.00",
+                "rangeMax": "30.00"
+            },
+            {
+                "propertyId": "Humidity",
+                "propertyName": "Humidity",
+                "propertyDesc": "Relative humidity in percentage",
+                "propertyType": "float",
+                "propertyUnit": "%RH",
+                "rangeMin": "5.00",
+                "rangeMax": "80.00"
+            },
+            {
+                "propertyId": "Pressure",
+                "propertyName": "Pressure",
+                "propertyDesc": "Level of Pressure",
+                "propertyType": "float",
+                "propertyUnit": "Pa",
+                "rangeMin": "20.00",
+                "rangeMax": "200.00"
+            },
+            {
+                "propertyId": "DecibelMeter",
+                "propertyName": "DecibelMeter",
+                "propertyDesc": "Sound Level Meter",
+                "propertyType": "float",
+                "propertyUnit": "dB",
+                "rangeMin": "10.00",
+                "rangeMax": "120.00"
+            },
+            {
+                "propertyId": "AirQuality",
+                "propertyName": "AirQuality",
+                "propertyDesc": "Air Quality Monitoring",
+                "propertyType": "float",
+                "propertyUnit": "ppm",
+                "rangeMin": "100.00",
+                "rangeMax": "1000.00"
+            }
+        ]
+    }
+]
