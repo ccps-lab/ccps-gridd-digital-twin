@@ -15,7 +15,7 @@ const App = function (props) {
         />
         <meta property="og:title" content="hyperion.io" />
         <meta property="og:image" content="${bannerImage}" />
-        <title>${props.title}</title>
+        <title>GRIDD Digital Twins - CCPS</title>
         <link rel="stylesheet" href="${ApplicationContext.lmvUrl}/style.css" />
         <link rel="stylesheet" href="${
           ApplicationContext.assetRoot
