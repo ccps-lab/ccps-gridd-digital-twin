@@ -77,11 +77,11 @@ function ReferenceApp(props) {
         container.style.resize = "auto";
     }
 
-    function addPanelContent(container) {
+    function addPanelContent(container, link) {
         // panel content
         var iframe = document.createElement('iframe');
         // PowerBI link
-        var link = "https://app.powerbi.com/view?r=eyJrIjoiMjM0NWIxMzktNWMzNC00YmM0LTg4M2UtZmI5Y2I3NWQ2MjU2IiwidCI6IjY3YTFhZDVjLTQ2YzAtNGQ5My05ZWMwLTAyOGM2NDhjYTdmMSJ9"
+        var link = link;
         //add style
         iframe.width = "100%";
         iframe.height = "100%";
@@ -89,22 +89,144 @@ function ReferenceApp(props) {
         container.appendChild(iframe);
     }
 
-    function initNewPanel(viewer, container, id, title, options) {
+    //1
+    function init_A_1544_panel(viewer, container, id, title, options) {
         this.viewer = viewer;
         // Initializing the panel
         Autodesk.Viewing.UI.DockingPanel.call(this, container, id, title, options);
 
         // Setting style of the docking panel
         setPanelStyle(this.container)
-
+        var powerBILink = "https://app.powerbi.com/view?r=eyJrIjoiN2QxMGY0ODctM2QyYS00NDk0LThhY2UtMjAxNDBhYzc1ODYxIiwidCI6IjY3YTFhZDVjLTQ2YzAtNGQ5My05ZWMwLTAyOGM2NDhjYTdmMSJ9"
         // Setting content of the docking panel
-        addPanelContent(this.container)
+        addPanelContent(this.container, powerBILink)
     }
-
-
     //defining constructor for createNewPanel
-    initNewPanel.prototype = Object.create(Autodesk.Viewing.UI.DockingPanel.prototype);
-    initNewPanel.prototype.constructor = initNewPanel;
+    init_A_1544_panel.prototype = Object.create(Autodesk.Viewing.UI.DockingPanel.prototype);
+    init_A_1544_panel.prototype.constructor = init_A_1544_panel;
+
+
+    //2
+    function init_A_1544_2_panel(viewer, container, id, title, options, dbId) {
+        this.viewer = viewer;
+        // Initializing the panel
+        Autodesk.Viewing.UI.DockingPanel.call(this, container, id, title, options);
+
+        // Setting style of the docking panel
+        setPanelStyle(this.container)
+        var powerBILink = "https://app.powerbi.com/view?r=eyJrIjoiM2ZkZDE2MzAtMDcyYy00MGJmLWI5ZjUtYWMzZGRjMTAyZTUwIiwidCI6IjY3YTFhZDVjLTQ2YzAtNGQ5My05ZWMwLTAyOGM2NDhjYTdmMSJ9"
+        // Setting content of the docking panel
+        addPanelContent(this.container, powerBILink)
+    }
+    //defining constructor for createNewPanel
+    init_A_1544_2_panel.prototype = Object.create(Autodesk.Viewing.UI.DockingPanel.prototype);
+    init_A_1544_2_panel.prototype.constructor = init_A_1544_2_panel;
+
+
+//3
+function init_A_1540_panel(viewer, container, id, title, options) {
+    this.viewer = viewer;
+    // Initializing the panel
+    Autodesk.Viewing.UI.DockingPanel.call(this, container, id, title, options);
+
+    // Setting style of the docking panel
+    setPanelStyle(this.container)
+    var powerBILink = "https://app.powerbi.com/view?r=eyJrIjoiMDkyMGIzOTktYzY4Mi00NmUxLWI3MWYtZTQyODYwMTk5NDRjIiwidCI6IjY3YTFhZDVjLTQ2YzAtNGQ5My05ZWMwLTAyOGM2NDhjYTdmMSJ9&pageName=ReportSection"
+    // Setting content of the docking panel
+    addPanelContent(this.container, powerBILink)
+}
+//defining constructor for createNewPanel
+init_A_1540_panel.prototype = Object.create(Autodesk.Viewing.UI.DockingPanel.prototype);
+init_A_1540_panel.prototype.constructor = init_A_1540_panel;
+
+
+
+//4
+function init_A_1542_panel(viewer, container, id, title, options) {
+    this.viewer = viewer;
+    // Initializing the panel
+    Autodesk.Viewing.UI.DockingPanel.call(this, container, id, title, options);
+
+    // Setting style of the docking panel
+    setPanelStyle(this.container)
+    var powerBILink = "https://app.powerbi.com/view?r=eyJrIjoiMzgzMjU4ZjItZTQwNS00YTBhLWJiODgtNTE2N2JlNDZlZGQzIiwidCI6IjY3YTFhZDVjLTQ2YzAtNGQ5My05ZWMwLTAyOGM2NDhjYTdmMSJ9"
+    // Setting content of the docking panel
+    addPanelContent(this.container, powerBILink)
+}
+//defining constructor for createNewPanel
+init_A_1542_panel.prototype = Object.create(Autodesk.Viewing.UI.DockingPanel.prototype);
+init_A_1542_panel.prototype.constructor = init_A_1542_panel;
+
+
+//5
+function init_A_1544_1_panel(viewer, container, id, title, options) {
+    this.viewer = viewer;
+    // Initializing the panel
+    Autodesk.Viewing.UI.DockingPanel.call(this, container, id, title, options);
+
+    // Setting style of the docking panel
+    setPanelStyle(this.container)
+    var powerBILink = "https://app.powerbi.com/view?r=eyJrIjoiNzUxMzc3OWMtNWFkNi00YmY3LTgyMTUtMjdkZWRkNmRlYjdlIiwidCI6IjY3YTFhZDVjLTQ2YzAtNGQ5My05ZWMwLTAyOGM2NDhjYTdmMSJ9"
+    // Setting content of the docking panel
+    addPanelContent(this.container, powerBILink)
+}
+//defining constructor for createNewPanel
+init_A_1544_1_panel.prototype = Object.create(Autodesk.Viewing.UI.DockingPanel.prototype);
+init_A_1544_1_panel.prototype.constructor = init_A_1544_1_panel;
+
+
+
+//6
+function init_BigRoom_2_panel(viewer, container, id, title, options) {
+    this.viewer = viewer;
+    // Initializing the panel
+    Autodesk.Viewing.UI.DockingPanel.call(this, container, id, title, options);
+
+    // Setting style of the docking panel
+    setPanelStyle(this.container)
+    var powerBILink = "https://app.powerbi.com/view?r=eyJrIjoiZGNiZjU4YmQtMTUzNS00YmQ4LWI2YjMtMDk0Zjg4MmJiMzViIiwidCI6IjY3YTFhZDVjLTQ2YzAtNGQ5My05ZWMwLTAyOGM2NDhjYTdmMSJ9"
+    // Setting content of the docking panel
+    addPanelContent(this.container, powerBILink)
+}
+//defining constructor for createNewPanel
+init_BigRoom_2_panel.prototype = Object.create(Autodesk.Viewing.UI.DockingPanel.prototype);
+init_BigRoom_2_panel.prototype.constructor = init_BigRoom_2_panel;
+
+
+    //Occupancy
+    function addOccypancyPanelContent(container) {
+        // panel content
+        var iframe = document.createElement('iframe');
+        // PowerBI link
+        var link = "https://app.powerbi.com/view?r=eyJrIjoiMzE3NWNhNmYtNjEzYS00NjQ3LTg1NGUtOGNiODI3ZWYxODU1IiwidCI6IjY3YTFhZDVjLTQ2YzAtNGQ5My05ZWMwLTAyOGM2NDhjYTdmMSJ9&pageName=ReportSection"
+        //add style
+        iframe.width = "100%";
+        iframe.height = "100%";
+        iframe.setAttribute("src", link);
+        container.appendChild(iframe);
+    }
+    function initOccupancyPanel(viewer, container, id, title, options) {
+        this.viewer = viewer;
+        // Initializing the panel
+        Autodesk.Viewing.UI.DockingPanel.call(this, container, id, title, options);
+
+        // Setting style of the docking panel
+        this.container.classList.add('docking-panel-container-solid-color-a');
+        this.container.style.position = "absolute";
+        this.container.style.top = "20%";
+        this.container.style.left = "30%";
+        this.container.style.width = "50%";
+        this.container.style.height = "50%";
+        this.container.style.resize = "auto";
+        // Setting content of the docking panel
+        addOccypancyPanelContent(this.container)
+    }
+    //defining constructor for createNewPanel
+    initOccupancyPanel.prototype = Object.create(Autodesk.Viewing.UI.DockingPanel.prototype);
+    initOccupancyPanel.prototype.constructor = initOccupancyPanel;
+
+
+
 
     // *******************************************
     // create Extension for add button to toolbar 
@@ -153,8 +275,8 @@ function ReferenceApp(props) {
         toolbarButtonShowDockingPanel.onClick = function (e) {
             // if null, create it
             if (panel == null) {
-                panel = new initNewPanel(viewer, viewer.container,
-                    'extensionPanel', 'Thermal Comfort');
+                panel = new initOccupancyPanel(viewer, viewer.container,
+                    'Occupancy', 'Occupancy');
             }
             // show/hide docking panel
             panel.setVisible(!panel.isVisible());
@@ -175,20 +297,50 @@ function ReferenceApp(props) {
         viewer.addEventListener(DataVizCore.MOUSE_CLICK, onSpriteClicked);
 
         function onSpriteClicked(e) {
-
             if (e.dbId != 0) {
-                var panel = this.panel;
-                if (!panel) {
-                    panel = new initNewPanel(viewer, viewer.container, 'extensionPanel', 'Thermal Comfort');
-                    this.panel = panel; // Store panel instance in 'this' context
+                switch (e.dbId) {
+                    case 1:
+                        var panel = this.panel;
+                        panel = new init_A_1544_panel(viewer, viewer.container, 'A-1540', 'Thermal Comfort');
+                        this.panel = panel; // Store panel instance in 'this' context
+                        panel.setVisible(true);
+                        break;
+                    case 2:
+                        var panel = this.panel;
+                        panel = new init_A_1544_2_panel(viewer, viewer.container, 'A_1544_2', 'Thermal Comfort');
+                        this.panel = panel; // Store panel instance in 'this' context
+                        panel.setVisible(true);
+                        break;
+                    case 3:
+                        var panel = this.panel;
+                        panel = new init_A_1540_panel(viewer, viewer.container, 'A_1540', 'Thermal Comfort');
+                        this.panel = panel; // Store panel instance in 'this' context
+                        panel.setVisible(true);
+                        break;
+                    case 4:
+                        var panel = this.panel;
+                        panel = new init_A_1542_panel(viewer, viewer.container, 'A_1542', 'Thermal Comfort');
+                        this.panel = panel; // Store panel instance in 'this' context
+                        panel.setVisible(true);
+                        break;
+                    case 5:
+                        var panel = this.panel;
+                        panel = new init_A_1544_1_panel(viewer, viewer.container, 'A_1544_1', 'Thermal Comfort');
+                        this.panel = panel; // Store panel instance in 'this' context
+                        panel.setVisible(true);
+                        break;
+                    case 6:
+                        var panel = this.panel;
+                        panel = new init_BigRoom_2_panel(viewer, viewer.container, 'BigRoom_2', 'Thermal Comfort');
+                        this.panel = panel; // Store panel instance in 'this' context
+                        panel.setVisible(true);
+                        break;
+                    default:
+                        break;
                 }
-                panel.setVisible(true);
-                console.log(`Sprite clicked: ${e.dbId}`);
+                //console.log(`Sprite clicked: ${e.dbId}`);
             }
-            // Register event handlers for event.
-
         }
-
     };
 
     initExtension.prototype.unload = function () {
