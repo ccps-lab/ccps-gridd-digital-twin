@@ -64,10 +64,7 @@ function EngineSimulation(props) {
         let session = event.data.session;
         let devicesList = session.dataStore.deviceModels[0].devices;
 
-       
-
         let rawData = [];
-
         let objList = {
           id: "engine-1",
           dbIds: [ 5712, 5719, 5776, 5780],
@@ -83,7 +80,6 @@ function EngineSimulation(props) {
             // sensorTypes: [element.sensorTypes[0]],
             type: "combo",
             sensorTypes: element.sensorTypes,
-            
             //styleId: element.styleId || element.type,
             
           });

@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/239f7d61-9eb4-4df5-a795-6ccb08322d7c/resourceGroups/ccps-pvm/providers/Microsoft.Web/sites/pvm-digitaltwin-server",
+    "appService.deploySubpath": "server"
+}
