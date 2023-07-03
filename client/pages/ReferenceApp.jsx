@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { BaseApp } from "forge-dataviz-iot-react-components";
 import DataHelper from "./DataHelper";
 import { EventTypes } from "forge-dataviz-iot-react-components";
-
+import adskLogoSvg from "../../assets/images/forge-logo-digital-twin.svg"
 import {
     SpriteSize,
     SensorStyleDefinitions,
@@ -501,6 +501,7 @@ init_BigRoom_2_panel.prototype.constructor = init_BigRoom_2_panel;
                 propertyIconMap={PropertyIconMap}
                 geomIndex={geomIndex}
             />
+            <img className="logo" src={adskLogoSvg} alt="Autodesk Logo" />
         </React.Fragment>
     );
 }
