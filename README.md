@@ -48,7 +48,7 @@ Node version: lts/erbium -> v12.x
 
 ### Create Storage Account in Azure
 >Please just follow the steps.
-1. In the [Storage Account section](https://portal.azure.com/?Microsoft_Azure_Education_correlationId=c0ba2f6c-77f6-4c42-bc21-de416980632e#view/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts), select *Create*.
+1. In the [Storage Account section](https://portal.azure.com/?Microsoft_Azure_Education_correlationId=c0ba2f6c-77f6-4c42-bc21-de416980632e#view/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts), select `Create`.
 2. In the Resource group section, select `ccps-rg`.
 3. In the Storage account name, choose a name (e.g, gridddigitaltwinv2)
 4. In the Region section, select `Canada east`.
@@ -56,9 +56,17 @@ Node version: lts/erbium -> v12.x
 
 **Do not change anything and click Review + create.**
 
+### Create application in Azure AD
+>Please just follow the steps.
+1. in the [Azure Active Directory](https://portal.azure.com/?Microsoft_Azure_Education_correlationId=c0ba2f6c-77f6-4c42-bc21-de416980632e#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/Overview), Go to the App registration, and select `New registration`.
+2. Just choose a name for your application.
+3. Select `Register`.
+4. You need `Application (client) ID` and `Directory (tenant) ID` in the configuration in the Azure document.
 
-
-
+**Certificate**
+1. After that, go to the `Certificate & secrets` and create a new client secret.
+2. choose `rbac` for the description and choose 24 months for Expires section.
+3. You need the value for configuration in Azure and COPY it right before creating a new client **(ATTENTION: you can only see the value once and please make sure you copy it)**
 
 
 
