@@ -48,7 +48,7 @@ Node version: lts/erbium -> v12.x
 
 ### Create Storage Account in Azure
 >Please just follow the steps.
-1. In the [Storage Account section](https://portal.azure.com/?Microsoft_Azure_Education_correlationId=c0ba2f6c-77f6-4c42-bc21-de416980632e#view/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts), select `Create`.
+1. In the [Storage Account section](https://portal.azure.com/?Microsoft_Azure_Education_correlationId=c0ba2f6c-77f6-4c42-bc21-de416980632e#view/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts), select *Create*.
 2. In the Resource group section, select `ccps-rg`.
 3. In the Storage account name, choose a name (e.g, gridddigitaltwinv2)
 4. In the Region section, select `Canada east`.
