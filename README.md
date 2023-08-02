@@ -94,6 +94,39 @@ You need to add some new application settings.
 15. name: <FORGE_DOC_URN> value:
 16. name: <FORGE_ENV> value: AutodeskProduction
 17. name: <LMV_URL> value: past this value (https://autodeskviewer.com/viewers/latest)
-    
+
+### Create URL in [IONOS](https://login.ionos.ca/?ac=OM.CA.CA287K417301T7073a&shoplogin=enabled&linkId=hd.nav.login&ucuoId=PUAC:default.WH.CA-20221017224851-EECE07C973538C455A5D09423A00DDE8.TClxa6a&_gl=1*10x6763*_ga*ODg4MTYxMTEuMTY2NTA5ODAzOA..*_ga_29DKNVLRWX*MTY2NjAzOTczNC4zLjAuMTY2NjAzOTczNC42MC4wLjA.)
+1. Login to the page, select `Domains & SSL` and select your domain.
+2. Select `Subdomains` and make a new subdomain.
+3. Choose a name.
+4. Back to your Azure App Service and select and create `Custom domains`, for validating you have to set the value of `CNAME` and `TXT` in the IONOS website.
+5. Back to IONOS, select `Target` and add `CNAME` and `TXT` records.
+6. in the Azure, select `TLS/SSL settings` and create new `Private Key Certificates`, at the end, back to `Custom domains` and add `SSL Binding`
+
+### Build Autodesk forge code in Azure
+I recommended to you, use VS Code. Please make sure you use the following version of node for deploying to production, otherwise you will encounter errors.
+
+>In VS code, make sure to move shared folder to server directory when deploying to production. This requires to update the imports in the following directories:
+### server
+
+> Make sure to move `shared` folder to `server` directory when deploying to production. This requires to update the imports in the following directories:
+>
+> - `server/router/App.js`
+> - `server/router/Index.js`
+> - `server/app.js`
+
+```shell
+Node version: lts/fermium -> v14.x
+```
+
+### client
+
+> Make sure the `shared` folder is in root directory before you run the build script `npm run build` for deploying to production.
+> Also make sure to move `dist` folder to `assets` directory after building the client. Then upload the `assets` folder to the static website container (Azure Storage).
+
+```shell
+Node version: lts/erbium -> v12.x
+```
+
 ## Environments Variables
 > Please follow the instruction on [Environment Template](./server/env_template.md) to setup the your production and development environment.
