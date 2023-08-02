@@ -86,5 +86,14 @@ You need to add some new application settings.
 9. name: <ASSET_ROOT>, value: go to storage account -> static website -> copy the primary endpoint -> past it in ASSET_ROOT part
 10. name: <ASSET_URL_PREFIX>, value: <STATIC_WEBSITE/assets>
 
+### Autodesk Forge APIs
+11. name: <FORGE_API_URL>, value: `https://developer.api.autodesk.com`
+12. name: <FORGE_CALLBACK_URL>, value: <YOUR_APP_URL>/oauth/callback. **(You can find it in the forge developer portal)**
+13. name: <FORGE_CLIENT_ID>, value: You have to copy the value from the forge portal
+14. name: <FORGE_CLIENT_SECRET>, value: You have to copy the value from the forge portal
+15. name: <FORGE_DOC_URN> value:
+16. name: <FORGE_ENV> value: AutodeskProduction
+17. name: <LMV_URL> value: past this value (https://autodeskviewer.com/viewers/latest)
+    
 ## Environments Variables
 > Please follow the instruction on [Environment Template](./server/env_template.md) to setup the your production and development environment.
