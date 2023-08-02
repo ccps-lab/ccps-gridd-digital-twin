@@ -36,5 +36,21 @@ Node version: lts/erbium -> v12.x
 4. in the section general settings, in the callback URL you have to write
 <YOUR_APP_URL>/oauth/callback (<YOUR_APP_URL> created in the section create URL in IONOS).
 
+### Create App Service in Azure
+>lease just follow the steps.
+
+1. In the App Services section in Azure, select Create.
+2. In the Basics section, select ccps-rg for the Resource group.
+3. In the Name section, choose a name for the web app name.
+4. In the Runtime stack section, select Node 14 LTS.
+5. In the Region section, select Canada east. Do not change anything and click Review + create.
+6. go to the configuration section. For this part, please read the configuration in the Azure document
+
+
+
+
+
+
+
 ## Environments Variables
 > Please follow the instruction on [Environment Template](./server/env_template.md) to setup the your production and development environment.
