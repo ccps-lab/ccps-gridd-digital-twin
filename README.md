@@ -37,14 +37,24 @@ Node version: lts/erbium -> v12.x
 <YOUR_APP_URL>/oauth/callback (<YOUR_APP_URL> created in the section create URL in IONOS).
 
 ### Create App Service in Azure
->lease just follow the steps.
+>Please just follow the steps.
 
 1. In the App Services section in Azure, select Create.
 2. In the Basics section, select ccps-rg for the Resource group.
 3. In the Name section, choose a name for the web app name.
 4. In the Runtime stack section, select Node 14 LTS.
-5. In the Region section, select Canada east. Do not change anything and click Review + create.
-6. go to the configuration section. For this part, please read the configuration in the Azure document
+5. In the Region section, select Canada east. **Do not change anything and click Review + create.**
+6. go to the configuration section. **For this part, please read the configuration in the Azure document**
+
+### Create Storage Account in Azure
+>Please just follow the steps.
+1. In the [Storage Account section](https://portal.azure.com/?Microsoft_Azure_Education_correlationId=c0ba2f6c-77f6-4c42-bc21-de416980632e#view/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts), select `Create`.
+2. In the Resource group section, select `ccps-rg`.
+3. In the Storage account name, choose a name (e.g, gridddigitaltwinv2)
+4. In the Region section, select `Canada east`.
+5. In the Redundancy section, choose `Locally-redundant storage(LRS)`.
+
+**Do not change anything and click Review + create.**
 
 
 
