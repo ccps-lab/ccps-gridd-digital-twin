@@ -68,7 +68,20 @@ Node version: lts/erbium -> v12.x
 2. choose `rbac` for the description and choose 24 months for Expires section.
 3. You need the value for configuration in Azure and COPY it right before creating a new client **(ATTENTION: you can only see the value once and please make sure you copy it)**
 
-
+### Configuration in Azure
+>In this section, you have to set up your forge and azure application. Please make sure you follow the steps correctly.
+You need to add some new application settings.
+**For production use case you should set the following environmental variables in your app configuration.**
+1. name:<ADAPTER_TYPE>, value: azure
+2. name: <AZURE_APPLICATION_SECRET>, value: You copied the value in Azure Active Directory documentation from [certificate] part
+3. name <AZURE_CLIENT_ID>, value: got to Azure directory -> Enterprise applications -> choose your application -> copy Application ID and past it in value of AZURE_CLIENT_ID
+4. name:<AZURE_SUBSCRIPTION_ID>, value: Please read the [Get Subscriptions](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-tenant-id) document to find the value of this part
+5. name:<AZURE_TENANT_ID>, value: Please read the [Get tenant](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-tenant-id) document to find the value of this part.
+6. name: <AZURE_TSI_ENV>, value: `https://1de59eb2-c417-4484-801f-c6539152e4f9.env.timeseries.azure.com/timeseries/query?api-version=2020-07-31&storeType=WarmStore`
+7. name: , value: *
+8. name: , value: prod
+9. name: <ASSET_ROOT>, value: go to storage account -> static website -> copy the primary endpoint -> past it in ASSET_ROOT part
+10. name: <ASSET_URL_PREFIX>, value: <STATIC_WEBSITE/assets>
 
 ## Environments Variables
 > Please follow the instruction on [Environment Template](./server/env_template.md) to setup the your production and development environment.
