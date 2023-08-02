@@ -72,7 +72,9 @@ Node version: lts/erbium -> v12.x
 >In this section, you have to set up your forge and azure application. Please make sure you follow the steps correctly.
 
 You need to add some new application settings.
+
 **For production use case you should set the following environmental variables in your app configuration.**
+
 1. name:<ADAPTER_TYPE>, value: azure
 2. name: <AZURE_APPLICATION_SECRET>, value: You copied the value in Azure Active Directory documentation from [certificate] part
 3. name <AZURE_CLIENT_ID>, value: got to Azure directory -> Enterprise applications -> choose your application -> copy Application ID and past it in value of AZURE_CLIENT_ID
