@@ -70,6 +70,7 @@ Node version: lts/erbium -> v12.x
 
 ### Configuration in Azure
 >In this section, you have to set up your forge and azure application. Please make sure you follow the steps correctly.
+
 You need to add some new application settings.
 **For production use case you should set the following environmental variables in your app configuration.**
 1. name:<ADAPTER_TYPE>, value: azure
